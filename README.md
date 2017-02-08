@@ -1,7 +1,7 @@
 # ship-components-eslint-rules
 [eslint](http://eslint.org/) rules used in ship-components and Ship applications. Includes support for [Babel](https://github.com/babel/babel-eslint) and [React](https://github.com/yannickcr/eslint-plugin-react).
 
-[![npm](https://img.shields.io/npm/v/ship-components-eslint-rules.svg?maxAge=2592000)](https://www.npmjs.com/package/ship-components-eslint-rules)
+[![npm](https://img.shields.io/npm/v/eslint-config-ship-components.svg?maxAge=2592000)](https://www.npmjs.com/package/eslint-config-ship-components)
 [![peerDependencies](https://img.shields.io/david/peer/ship-components/ship-components-eslint-rules.svg?style=flat)](https://david-dm.org/ship-components/ship-components-eslint-rules?type=peer)
 
 # Usage
