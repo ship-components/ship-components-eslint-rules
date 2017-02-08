@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-ship-components",
+  "version": "1.0.0",
+  "description": "Eslint Rules for SHIP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ship-components/ship-components-eslint-rules.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Isaac Suttell <isaac.suttell@sony.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ship-components/ship-components-eslint-rules/issues"
+  },
+  "homepage": "https://github.com/ship-components/ship-components-eslint-rules#readme",
+  "peerDependencies": {
+    "babel-eslint" : ">=7.0.0",
+    "eslint": ">=3.0.0",
+    "eslint-plugin-react": ">=6.0.0"
+  }
+}
