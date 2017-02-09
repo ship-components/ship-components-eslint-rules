@@ -43,6 +43,7 @@ Add `"extends": "ship-components",` to your .eslintrc
 4. Add to your `.eslintrc` like normal
 
 # History
+* 1.1.0 - Added indent rule
 * 1.0.0 - Initial commit
 
 # License
