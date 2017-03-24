@@ -2,7 +2,9 @@
 [eslint](http://eslint.org/) rules used in ship-components and Ship applications. Includes support for [Babel](https://github.com/babel/babel-eslint) and [React](https://github.com/yannickcr/eslint-plugin-react).
 
 [![npm](https://img.shields.io/npm/v/eslint-config-ship-components.svg?maxAge=2592000)](https://www.npmjs.com/package/eslint-config-ship-components)
+[![Build Status](http://img.shields.io/travis/ship-components/ship-components-eslint-rules/master.svg?style=flat)](https://travis-ci.org/ship-components/ship-components-eslint-rules)
 [![peerDependencies](https://img.shields.io/david/peer/ship-components/ship-components-eslint-rules.svg?style=flat)](https://david-dm.org/ship-components/ship-components-eslint-rules?type=peer)
+[![devDependencies](https://img.shields.io/david/dev/ship-components/ship-components-eslint-rules.svg?style=flat)](https://david-dm.org/ship-components/ship-components-eslint-rules?type=dev)
 
 # Usage
 ## Install
@@ -43,6 +45,7 @@ Add `"extends": "ship-components",` to your .eslintrc
 4. Add to your `.eslintrc` like normal
 
 # History
+* 1.2.0 - Updates the eslint setup to focus on react and JSX, and added tests
 * 1.1.0 - Added indent rule
 * 1.0.0 - Initial commit
 
