@@ -45,7 +45,8 @@ Add `"extends": "ship-components",` to your .eslintrc
 4. Add to your `.eslintrc` like normal
 
 # History
-* 1.3.1 - Switche jsx tabs to spaces
+* 1.3.2 - Allowed arrow functions in render method, added more rules for spacing
+* 1.3.1 - Switched jsx tabs to spaces
 * 1.3.0 - Switched from tabs to spaces
 * 1.2.0 - Updates the eslint setup to focus on react and JSX, and added tests
 * 1.1.0 - Added indent rule
