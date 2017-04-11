@@ -147,7 +147,7 @@ module.exports = {
     "no-inline-comments": "off",         // disallow comments inline after code (off by default)
     "no-lonely-if": "off",               // disallow if as the only statement in an else block (off by default)
     "no-mixed-spaces-and-tabs": "warn",  // disallow mixed spaces and tabs for indentation
-    "indent": ["warn", "tab"],           // enforce consistent indentation
+    "indent": ["warn", 2],               // enforce consistent indentation
     "no-multiple-empty-lines": "warn",   // disallow multiple empty lines (off by default)
     "no-nested-ternary": "error",        // disallow nested ternary expressions (off by default)
     "no-new-object": "warn",             // disallow use of the Object constructor
