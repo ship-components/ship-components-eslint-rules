@@ -206,8 +206,8 @@ module.exports = {
     "react/require-optimization": "warn",
     "react/jsx-key": "warn",
     "react/jsx-handler-names": "warn",
-    "react/jsx-indent": ["warn", "tab"],
-    "react/jsx-indent-props": ["warn", "tab"],
+    "react/jsx-indent": ["warn", 2],
+    "react/jsx-indent-props": ["warn", 2],
     "react/jsx-no-bind": "warn",
     "react/jsx-closing-bracket-location" : "warn"
   }
