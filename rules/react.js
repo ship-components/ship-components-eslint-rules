@@ -137,7 +137,7 @@ module.exports = {
     "comma-style": "warn",              // enforce one true comma style (off by default)
     "consistent-this": "off",           // enforces consistent naming when capturing the current execution context (off by default)
     "eol-last": "warn",                 // enforce newline at the end of file, with no multiple empty lines
-    "func-names": "off",                // require function expressions to have a name (off by default)
+    "func-names": "warn",               // require function expressions to have a name (off by default)
     "func-style": "off",                // enforces use of function declarations or expressions (off by default)
     "key-spacing": "off",               // enforces spacing between keys and values in object literal properties
     "max-nested-callbacks": ["error", 3], // specify the maximum depth callbacks can be nested (off by default)
@@ -145,9 +145,10 @@ module.exports = {
     "new-parens": "warn",                // disallow the omission of parentheses when invoking a constructor with no arguments
     "no-array-constructor": "warn",      // disallow use of the Array constructor
     "no-inline-comments": "off",         // disallow comments inline after code (off by default)
-    "no-lonely-if": "off",               // disallow if as the only statement in an else block (off by default)
+    "no-lonely-if": "warn",              // disallow if as the only statement in an else block (off by default)
     "no-mixed-spaces-and-tabs": "warn",  // disallow mixed spaces and tabs for indentation
     "indent": ["warn", 2],               // enforce consistent indentation
+    "no-tabs": ["warn"],                 // disallow tabs everywhere
     "no-multiple-empty-lines": "warn",   // disallow multiple empty lines (off by default)
     "no-nested-ternary": "error",        // disallow nested ternary expressions (off by default)
     "no-new-object": "warn",             // disallow use of the Object constructor
@@ -157,22 +158,23 @@ module.exports = {
     "no-trailing-spaces": "warn",        // disallow trailing whitespace at the end of lines
     "no-underscore-dangle": "off",       // disallow dangling underscores in identifiers
     "no-wrap-func": "off",               // disallow wrapping of non-IIFE statements in parens
-    "one-var": "off",                    // allow just one var statement per function (off by default)
+    "one-var": "warn",                   // allow just one var statement per function (off by default)
     "operator-assignment": "off",        // require assignment operator shorthand where possible or prohibit it entirely (off by default)
     "padded-blocks": "off",              // enforce padding within blocks (off by default)
     "quotes": ["warn", "single"],        // specify whether double or single quotes should be used
     "semi": ["warn", "always"],          // require or disallow use of semicolons instead of ASI
     "sort-vars": "off",                  // sort variables within the same declaration block (off by default)
-    "space-before-function-paren": [1, "never"], // require a space after function names (off by default)
-    "space-after-keywords": "off",       // require a space after certain keywords (off by default)
-    "space-before-blocks": "off",        // require or disallow space before blocks (off by default)
-    "space-in-brackets": "off",          // require or disallow spaces inside brackets (off by default)
-    "space-in-parens": "off",            // require or disallow spaces inside parentheses (off by default)
-    "space-infix-ops": "off",            // require spaces around operators
+    "space-before-function-paren": ["warn", "never"], // require a space after function names (off by default)
+    "space-after-keywords": "warn",      // require a space after certain keywords (off by default)
+    "space-before-blocks": "warn",       // require or disallow space before blocks (off by default)
+    "space-in-brackets": "warn",         // require or disallow spaces inside brackets (off by default)
+    "space-in-parens": ["warn", "never"],// require or disallow spaces inside parentheses (off by default)
+    "space-infix-ops": "warn",           // require spaces around operators
     "space-return-throw-case": "off",    // require a space after return, throw, and case
     "space-unary-ops": "off",            // Require or disallow spaces before/after unary operators (words on by default, nonwords off by default)
     "spaced-line-comment": "off",        // require or disallow a space immediately following the // in a line comment (off by default)
     "wrap-regex": "off",                 // require regex literals to be wrapped in parentheses (off by default)
+    "no-unneeded-ternary": "warn",       // disallow unneed ternarys
 
     ////////// React //////////
 
@@ -195,7 +197,7 @@ module.exports = {
     "react/no-multi-comp": "warn",
     "react/no-unknown-property": "warn",
     "react/prop-types": "warn",
-    "react/react-in-jsx-scope": "warn",
+    "react/react-in-jsx-scope": "error",
     "react/self-closing-comp": "warn",
     "react/sort-comp": "warn",
     "react/no-deprecated" : "warn",
@@ -204,11 +206,15 @@ module.exports = {
     "react/prefer-stateless-function": "warn",
     "react/require-default-props" : "warn",
     "react/require-optimization": "warn",
-    "react/jsx-key": "warn",
+    "react/jsx-key": "error",
     "react/jsx-handler-names": "warn",
     "react/jsx-indent": ["warn", 2],
     "react/jsx-indent-props": ["warn", 2],
-    "react/jsx-no-bind": "warn",
+    "react/jsx-no-bind": ["warn", {
+      "ignoreRefs": false,
+      "allowArrowFunctions": true,
+      "allowBind": false
+    }],
     "react/jsx-closing-bracket-location" : "warn"
   }
 };
