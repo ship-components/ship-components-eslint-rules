@@ -175,6 +175,20 @@ module.exports = {
     "spaced-line-comment": "off",        // require or disallow a space immediately following the // in a line comment (off by default)
     "wrap-regex": "off",                 // require regex literals to be wrapped in parentheses (off by default)
     "no-unneeded-ternary": "warn",       // disallow unneed ternarys
+    // require parens in arrow function arguments
+    "arrow-parens": ["warn", "as-needed", {
+      "requireForBlockBody": true,
+    }],
+    // enforces no braces where they can be omitted
+    "arrow-body-style": ["error", "as-needed", {
+      "requireReturnForObjectLiteral": false,
+    }],
+    // require space before/after arrow function's arrow
+   'arrow-spacing': ['error', { before: true, after: true }],
+   // disallow arrow functions where they could be confused with comparisons
+   'no-confusing-arrow': ['error', {
+     allowParens: true,
+   }],
 
     ////////// React //////////
 
