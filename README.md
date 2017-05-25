@@ -46,6 +46,7 @@ Add `"extends": "ship-components",` to your .eslintrc
 
 # History
 * 1.4.0 - Added rules for arrow functions based on airbnb
+* 1.3.2 - Allowed arrow functions in render method, added more rules for spacing
 * 1.3.1 - Switched jsx tabs to spaces
 * 1.3.0 - Switched from tabs to spaces
 * 1.2.0 - Updates the eslint setup to focus on react and JSX, and added tests
