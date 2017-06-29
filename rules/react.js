@@ -165,9 +165,9 @@ module.exports = {
     "semi": ["warn", "always"],          // require or disallow use of semicolons instead of ASI
     "sort-vars": "off",                  // sort variables within the same declaration block (off by default)
     "space-before-function-paren": ["warn", "never"], // require a space after function names (off by default)
-    "space-after-keywords": "warn",      // require a space after certain keywords (off by default)
+    "keyword-spacing": "warn",      // require a space after certain keywords (off by default)
     "space-before-blocks": "warn",       // require or disallow space before blocks (off by default)
-    "space-in-brackets": "warn",         // require or disallow spaces inside brackets (off by default)
+    "array-bracket-spacing": "warn",         // require or disallow spaces inside brackets (off by default)
     "space-in-parens": ["warn", "never"],// require or disallow spaces inside parentheses (off by default)
     "space-infix-ops": "warn",           // require spaces around operators
     "space-return-throw-case": "off",    // require a space after return, throw, and case
