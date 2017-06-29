@@ -45,6 +45,7 @@ Add `"extends": "ship-components",` to your .eslintrc
 4. Add to your `.eslintrc` like normal
 
 # History
+* 1.4.1 - Fixes the invalid comma-dangle value
 * 1.4.0 - Added rules for arrow functions based on airbnb
 * 1.3.2 - Allowed arrow functions in render method, added more rules for spacing
 * 1.3.1 - Switched jsx tabs to spaces

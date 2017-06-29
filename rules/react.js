@@ -23,7 +23,7 @@ module.exports = {
   "rules": {
     ////////// Possible Errors //////////
 
-    "comma-dangle": "error",            // disallow trailing commas in object literals
+    "comma-dangle": [2, "never"],       // disallow trailing commas in object literals
     "no-cond-assign": "error",          // disallow assignment in conditional expressions
     "no-console": "off",                // disallow use of console (off by default in the node environment)
     "no-constant-condition": "error",   // disallow use of constant expressions in conditions
