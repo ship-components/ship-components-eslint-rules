@@ -158,7 +158,7 @@ module.exports = {
     "no-trailing-spaces": "warn",        // disallow trailing whitespace at the end of lines
     "no-underscore-dangle": "off",       // disallow dangling underscores in identifiers
     "no-wrap-func": "off",               // disallow wrapping of non-IIFE statements in parens
-    "one-var": "warn",                   // allow just one var statement per function (off by default)
+    "one-var": ["warn", "never"],                   // allow just one var statement per function (off by default)
     "operator-assignment": "off",        // require assignment operator shorthand where possible or prohibit it entirely (off by default)
     "padded-blocks": "off",              // enforce padding within blocks (off by default)
     "quotes": ["warn", "single"],        // specify whether double or single quotes should be used
