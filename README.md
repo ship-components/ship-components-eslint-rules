@@ -45,6 +45,7 @@ Add `"extends": "ship-components",` to your .eslintrc
 4. Add to your `.eslintrc` like normal
 
 # History
+* 1.4.2 - Fixes the one-var rule to enforce using multiple var, let, const per line.
 * 1.4.1 - Fixes the invalid comma-dangle, space-after-keywords and array-bracket-spacing values
 * 1.4.0 - Added rules for arrow functions based on airbnb
 * 1.3.2 - Allowed arrow functions in render method, added more rules for spacing
