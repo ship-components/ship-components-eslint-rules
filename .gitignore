@@ -39,5 +39,6 @@ jspm_packages
 # Personal Dev env
 .vscode
 
-# Docker
 *.docker*
+package-lock.json
+
