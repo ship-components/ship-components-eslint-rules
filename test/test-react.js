@@ -5,6 +5,7 @@ import eslintrc from '../';
 const cli = new CLIEngine({
   useEslintrc: false,
   baseConfig: eslintrc,
+  ignorePath: '../.eslintignore'
 });
 
 function lint(text) {
