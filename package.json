@@ -1,10 +1,15 @@
 {
   "name": "eslint-config-ship-components",
-  "version": "1.1.0",
+  "version": "1.5.0",
   "description": "Eslint Rules for SHIP",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests specified.\" && exit 0"
+    "prelint": "editorconfig-tools check * rules/* test/*",
+    "lint": "eslint .",
+    "tests-only": "babel-tape-runner ./test/test-*.js",
+    "pretest": "npm run --silent lint",
+    "test": "npm run --silent tests-only",
+    "travis": "npm install -g trevor && trevor"
   },
   "repository": {
     "type": "git",
@@ -12,16 +17,30 @@
   },
   "keywords": [
     "eslint",
-    "eslintconfig"
+    "eslintconfig",
+    "javascript",
+    "sony",
+    "config",
+    "styleguide"
   ],
   "author": "Isaac Suttell <isaac.suttell@sony.com>",
+  "contributors": [
+    {
+      "name": "Isaac Suttell",
+      "email": "isaac.suttell@sony.com"
+    },
+    {
+      "name": "Sepand Assadi",
+      "email": "sepand.assadi@sony.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ship-components/ship-components-eslint-rules/issues"
   },
   "homepage": "https://github.com/ship-components/ship-components-eslint-rules#readme",
   "peerDependencies": {
-    "babel-eslint" : ">=7.0.0",
+    "babel-eslint": ">=7.0.0",
     "eslint": ">=3.0.0",
     "eslint-plugin-react": ">=6.0.0"
   },
