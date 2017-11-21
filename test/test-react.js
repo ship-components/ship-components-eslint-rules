@@ -4,8 +4,7 @@ import eslintrc from '../';
 
 const cli = new CLIEngine({
   useEslintrc: false,
-  baseConfig: eslintrc,
-  ignorePath: '../.eslintignore'
+  baseConfig: eslintrc
 });
 
 function lint(text) {
