@@ -4,7 +4,7 @@ import eslintrc from '../';
 
 const cli = new CLIEngine({
   useEslintrc: false,
-  baseConfig: eslintrc,
+  baseConfig: eslintrc
 });
 
 function lint(text) {

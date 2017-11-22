@@ -45,6 +45,7 @@ Add `"extends": "ship-components",` to your .eslintrc
 4. Add to your `.eslintrc` like normal
 
 # History
+* 1.5.0 - Updated babel preset to env (from latest). Removed node 4 from Travis CI; added node 8.
 * 1.4.2 - Fixes the one-var rule to enforce using multiple var, let, const per line.
 * 1.4.1 - Fixes the invalid comma-dangle, space-after-keywords and array-bracket-spacing values
 * 1.4.0 - Added rules for arrow functions based on airbnb

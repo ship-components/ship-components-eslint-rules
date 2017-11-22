@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ship-components",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "Eslint Rules for SHIP",
   "main": "index.js",
   "scripts": {
@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "babel-preset-latest": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
     "babel-tape-runner": "^2.0.1",
     "editorconfig-tools": "^0.1.1",
     "eslint": "^3.17.1",
